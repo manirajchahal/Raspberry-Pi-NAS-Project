@@ -38,7 +38,7 @@ I built this personal NAS using a Raspberry Pi 5 and a Toshiba 2 TB hard drive t
 3. **Configuration:**  
    - Configure Samba or your preferred file-sharing service by editing the configuration file (e.g., /etc/samba/smb.conf). 
      ```bash
-     [MyMedia] path = /media/pi/MyExternalDrive/ 
+     [Any name for share drive here] path = /media/pi/(Your drive name here)/ 
      writeable = yes
      create mask = 0775 
      directory mask = 0775 
@@ -48,7 +48,11 @@ I built this personal NAS using a Raspberry Pi 5 and a Toshiba 2 TB hard drive t
 
 4. **Testing & Deployment:**  
    - Test remote access and file-sharing capabilities from another device.
-
+  
+5. **Access**
+   - To access the NAS, all you have to do is open Run on Windows (Go -> Connect to Server on Mac) and type \\raspberrypi\(Whatever the share drive is named)
+   - Make sure you turn on Network Discovery and File Sharing
+   
 ## Usage
 - **Data Management:** Easily store, organize, and backup your data.
 - **Remote Access:** Access your files from any networked device securely.
