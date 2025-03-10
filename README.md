@@ -1,5 +1,3 @@
-# Raspberry-Pi-NAS-Project
-
 # Personal NAS Build with Raspberry Pi 5
 
 ## Overview
@@ -40,8 +38,8 @@ I built this personal NAS using a Raspberry Pi 5 and a Toshiba 2 TB hard drive t
      ```bash
      [Any name for share drive here] path = /media/pi/(Your drive name here)/ 
      writeable = yes
-     create mask = 0775 
-     directory mask = 0775 
+     create mask = 0775 # To allow read, write, and execute access for Owner and Group, and read and execute access for Others.
+     directory mask = 0775 To allow read, write, and execute access for Owner and Group, and read and execute access for Others.
      public=no 
      ```
    - Set up necessary permissions and security measures (e.g. user authentication).
